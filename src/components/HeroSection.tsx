@@ -19,12 +19,12 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass-card px-4 py-2 mb-6 animate-fade-in">
             <span className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
-            <span className="text-sm text-muted-foreground">offre limitée — décembre 2024</span>
+            <span className="text-sm text-muted-foreground">Offre limitée — décembre 2025</span>
           </div>
           
           {/* Main heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <span className="text-foreground">lance tes </span>
+            <span className="text-foreground">Lance tes </span>
             <span className="text-primary">campagnes pub</span>
             <br />
             <span className="text-foreground">comme un </span>
@@ -33,7 +33,7 @@ const HeroSection = () => {
           
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            tu perds de l'argent en faisant tes pubs toi-même ? laisse un expert gérer tes campagnes Meta, Google & TikTok pour maximiser ton ROI.
+            Tu perds de l'argent en faisant tes pubs toi-même ? Laisse un expert gérer tes campagnes Meta, Google & TikTok pour maximiser ton ROI.
           </p>
           
           {/* Value proposition */}
@@ -50,13 +50,13 @@ const HeroSection = () => {
             style={{ animationDelay: "0.4s" }}
           >
             <MessageCircle className="w-5 h-5" />
-            réserver mon offre maintenant
+            Réserver mon offre maintenant
           </a>
           
           {/* Countdown */}
           <div className="mt-12 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-            <p className="text-sm text-muted-foreground mb-4">l'offre expire dans :</p>
-            <CountdownTimer targetDate={new Date("2024-12-30T23:59:59")} />
+            <p className="text-sm text-muted-foreground mb-4">L'offre expire dans :</p>
+            <CountdownTimer targetDate={new Date("2025-12-30T23:59:59")} />
           </div>
           
           {/* Stats */}
