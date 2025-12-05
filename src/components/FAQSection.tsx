@@ -53,7 +53,7 @@ const FAQSection = () => {
             questions fréquentes
           </span>
           <h2 className="section-title mb-4">
-            <span className="text-foreground">tu as des </span>
+            <span className="text-foreground">Tu as des </span>
             <span className="text-primary">questions</span>
             <span className="text-foreground"> ?</span>
           </h2>
@@ -82,7 +82,7 @@ const FAQSection = () => {
           
           {/* CTA */}
           <div className="text-center mt-12">
-            <p className="text-muted-foreground mb-4">tu as encore des questions ?</p>
+            <p className="text-muted-foreground mb-4">Tu as encore des questions ?</p>
             <a
               href={whatsappLink}
               target="_blank"
