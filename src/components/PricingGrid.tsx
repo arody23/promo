@@ -75,7 +75,7 @@ const PricingGrid = () => {
             offre spéciale décembre
           </span>
           <h2 className="section-title mb-4">
-            <span className="text-foreground">choisis ton </span>
+            <span className="text-foreground">Choisis ton </span>
             <span className="text-primary">forfait</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-4">
