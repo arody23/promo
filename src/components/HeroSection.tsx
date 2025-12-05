@@ -38,7 +38,7 @@ const HeroSection = () => {
           
           {/* Value proposition */}
           <p className="text-base text-muted-foreground/80 mb-8 max-w-xl mx-auto animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            +300% de retour sur investissement pour mes clients — c'est maintenant ton tour.
+            Rejoins les +50 PME qui ont boosté leur chiffre d'affaires grâce à mes campagnes.
           </p>
           
           {/* CTA */}
@@ -55,23 +55,19 @@ const HeroSection = () => {
           
           {/* Countdown */}
           <div className="mt-12 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-            <p className="text-sm text-muted-foreground mb-4">L'offre expire dans :</p>
+            <p className="text-sm text-muted-foreground mb-6">L'offre expire dans :</p>
             <CountdownTimer targetDate={new Date("2025-12-30T23:59:59")} />
           </div>
           
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-4 mt-16 max-w-lg mx-auto animate-fade-in" style={{ animationDelay: "0.6s" }}>
+          <div className="grid grid-cols-2 gap-4 mt-16 max-w-md mx-auto animate-fade-in" style={{ animationDelay: "0.6s" }}>
             <div className="glass-card p-4 text-center">
               <div className="text-2xl font-bold text-primary">5+</div>
-              <div className="text-xs text-muted-foreground">ans d'expérience</div>
+              <div className="text-xs text-muted-foreground">Ans d'expérience</div>
             </div>
             <div className="glass-card p-4 text-center">
-              <div className="text-2xl font-bold text-secondary">50+</div>
-              <div className="text-xs text-muted-foreground">projets réussis</div>
-            </div>
-            <div className="glass-card p-4 text-center">
-              <div className="text-2xl font-bold text-primary">300%</div>
-              <div className="text-xs text-muted-foreground">ROI moyen</div>
+              <div className="text-2xl font-bold text-secondary">+50</div>
+              <div className="text-xs text-muted-foreground">PME accompagnées</div>
             </div>
           </div>
         </div>
