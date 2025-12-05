@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
             <span className="text-foreground"> concrets</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Découvre ce que disent mes clients après avoir travaillé avec moi
+            Découvre ce que disent mes clients après avoir travaillé avec moi.
           </p>
         </div>
         
