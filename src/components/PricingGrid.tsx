@@ -79,7 +79,7 @@ const PricingGrid = () => {
             <span className="text-primary">forfait</span>
           </h2>
           <p className="text-xs sm:text-sm md:text-base text-muted-foreground max-w-2xl mx-auto mb-3 md:mb-4">
-            des prix exceptionnels pour lancer tes campagnes comme un pro. offre valable jusqu'au 30 décembre 2024.
+            des prix exceptionnels pour lancer tes campagnes comme un pro. offre valable jusqu'au 30 décembre 2025.
           </p>
           <div className="glass-card inline-flex items-center gap-2 px-3 py-2 md:px-4 md:py-2 text-xs md:text-sm flex-col sm:flex-row">
             <span className="text-secondary">⚠️</span>
