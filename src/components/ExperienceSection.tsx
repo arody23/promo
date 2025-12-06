@@ -67,24 +67,24 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-12 md:py-20 relative overflow-hidden">
       {/* Background decorations */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-80 h-80 md:w-96 md:h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-80 h-80 md:w-96 md:h-96 bg-secondary/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left content */}
           <div className="animate-fade-in">
-            <span className="inline-block glass-card px-4 py-2 text-sm text-muted-foreground mb-4">
+            <span className="inline-block glass-card px-3 py-1 md:px-4 md:py-2 text-xs md:text-sm text-muted-foreground mb-3 md:mb-4">
               À propos de moi
             </span>
-            <h2 className="section-title mb-6">
+            <h2 className="section-title mb-4 md:mb-6">
               <span className="text-foreground">Je suis </span>
               <span className="text-primary">aroman emetshu</span>
             </h2>
             
-            <div className="space-y-4 text-muted-foreground">
+            <div className="space-y-3 md:space-y-4 text-xs sm:text-sm md:text-base text-muted-foreground">
               <p>
                 Média buyer & consultant expert en publicités multi-plateformes avec plus de 5 ans d'expérience dans l'accompagnement des e-commerces et entreprises.
               </p>
@@ -97,18 +97,18 @@ const ExperienceSection = () => {
             </div>
             
             {/* Platforms with SVG logos */}
-            <div className="mt-8">
-              <h4 className="text-sm font-semibold text-foreground mb-4">Plateformes maîtrisées :</h4>
-              <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
+            <div className="mt-6 md:mt-8">
+              <h4 className="text-xs md:text-sm font-semibold text-foreground mb-3 md:mb-4">Plateformes maîtrisées :</h4>
+              <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-2 md:gap-3">
                 {platforms.map((platform, index) => (
                   <div 
                     key={platform.name} 
-                    className="glass-card p-3 flex flex-col items-center justify-center gap-2 hover:scale-110 transition-transform duration-300 group animate-fade-in"
+                    className="glass-card p-2 md:p-3 flex flex-col items-center justify-center gap-1 md:gap-2 hover:scale-110 transition-transform duration-300 group animate-fade-in"
                     style={{ animationDelay: `${index * 0.1}s` }}
                     title={platform.name}
                   >
                     <platform.logo />
-                    <span className="text-[10px] text-muted-foreground text-center leading-tight group-hover:text-foreground transition-colors">
+                    <span className="text-[8px] md:text-[10px] text-muted-foreground text-center leading-tight group-hover:text-foreground transition-colors">
                       {platform.name.split(' ')[0]}
                     </span>
                   </div>
@@ -118,16 +118,16 @@ const ExperienceSection = () => {
           </div>
           
           {/* Right stats */}
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-2 md:gap-4">
             {stats.map((stat, index) => (
               <div
                 key={stat.label}
-                className="glass-card p-6 text-center hover:scale-105 transition-transform duration-300 animate-fade-in group"
+                className="glass-card p-3 md:p-6 text-center hover:scale-105 transition-transform duration-300 animate-fade-in group"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
-                <stat.icon className={`w-8 h-8 mx-auto mb-3 ${stat.color} group-hover:scale-110 transition-transform duration-300`} />
-                <div className={`text-3xl font-bold ${stat.color} mb-1`}>{stat.value}</div>
-                <div className="text-xs text-muted-foreground">{stat.label}</div>
+                <stat.icon className={`w-6 md:w-8 h-6 md:h-8 mx-auto mb-2 md:mb-3 ${stat.color} group-hover:scale-110 transition-transform duration-300`} />
+                <div className={`text-xl md:text-3xl font-bold ${stat.color} mb-0.5 md:mb-1`}>{stat.value}</div>
+                <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
               </div>
             ))}
           </div>

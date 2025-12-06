@@ -43,40 +43,40 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
   ];
 
   return (
-    <div className="glass-card p-8 md:p-12 border-2 border-secondary/50 bg-gradient-to-br from-secondary/10 to-primary/10 relative overflow-hidden">
+    <div className="glass-card p-4 md:p-8 lg:p-12 border-2 border-secondary/50 bg-gradient-to-br from-secondary/10 to-primary/10 relative overflow-hidden">
       {/* Background pulse effect */}
       <div className="absolute inset-0 bg-secondary/5 animate-pulse" />
       
       {/* Urgency header */}
-      <div className="flex items-center justify-center gap-3 mb-6 relative z-10">
-        <Clock className="w-8 h-8 text-secondary animate-pulse" />
-        <span className="text-xl md:text-2xl font-bold text-secondary uppercase tracking-wider">
+      <div className="flex items-center justify-center gap-2 md:gap-3 mb-4 md:mb-6 relative z-10 flex-wrap">
+        <Clock className="w-6 md:w-8 h-6 md:h-8 text-secondary animate-pulse shrink-0" />
+        <span className="text-base md:text-xl lg:text-2xl font-bold text-secondary uppercase tracking-wider">
           Offre limitée !
         </span>
-        <Clock className="w-8 h-8 text-secondary animate-pulse" />
+        <Clock className="w-6 md:w-8 h-6 md:h-8 text-secondary animate-pulse shrink-0" />
       </div>
       
       {/* Countdown units */}
-      <div className="flex items-center justify-center gap-2 md:gap-4 relative z-10">
+      <div className="flex items-center justify-center gap-1 md:gap-2 lg:gap-4 relative z-10 flex-wrap">
         {timeUnits.map((unit, index) => (
-          <div key={unit.label} className="flex items-center gap-2 md:gap-4">
-            <div className="bg-background/80 backdrop-blur-sm border border-secondary/30 rounded-2xl px-4 md:px-8 py-4 md:py-6 min-w-[80px] md:min-w-[120px] text-center shadow-lg shadow-secondary/20 hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl md:text-6xl lg:text-7xl font-black text-secondary tabular-nums">
+          <div key={unit.label} className="flex items-center gap-1 md:gap-2 lg:gap-4">
+            <div className="bg-background/80 backdrop-blur-sm border border-secondary/30 rounded-xl md:rounded-2xl px-2 md:px-4 lg:px-8 py-2 md:py-4 lg:py-6 min-w-[50px] md:min-w-[80px] lg:min-w-[120px] text-center shadow-lg shadow-secondary/20 hover:scale-105 transition-transform duration-300">
+              <div className="text-2xl md:text-4xl lg:text-6xl font-black text-secondary tabular-nums leading-none">
                 {String(unit.value).padStart(2, "0")}
               </div>
-              <div className="text-xs md:text-sm text-muted-foreground mt-2 uppercase tracking-wider font-medium">
+              <div className="text-[8px] md:text-xs lg:text-sm text-muted-foreground mt-0.5 md:mt-2 uppercase tracking-wider font-medium">
                 {unit.label}
               </div>
             </div>
             {index < timeUnits.length - 1 && (
-              <span className="text-3xl md:text-5xl text-secondary font-bold animate-pulse">:</span>
+              <span className="text-xl md:text-3xl lg:text-5xl text-secondary font-bold animate-pulse">:</span>
             )}
           </div>
         ))}
       </div>
       
       {/* Urgency message */}
-      <p className="text-center text-muted-foreground mt-6 text-sm md:text-base relative z-10">
+      <p className="text-center text-muted-foreground mt-4 md:mt-6 text-xs md:text-sm lg:text-base relative z-10">
         Ne rate pas cette opportunité — les prix remontent après le <span className="text-secondary font-semibold">30 décembre 2025</span>
       </p>
     </div>

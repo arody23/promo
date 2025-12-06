@@ -85,11 +85,11 @@
   }
   
   .btn-primary {
-    @apply bg-primary text-primary-foreground px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-[0_0_40px_hsl(217_91%_60%/0.3)] hover:scale-105;
+    @apply bg-primary text-primary-foreground px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-sm md:text-lg transition-all duration-300 hover:shadow-[0_0_40px_hsl(217_91%_60%/0.3)] hover:scale-105 active:scale-95 min-h-[44px] md:min-h-[48px] flex items-center justify-center;
   }
   
   .btn-gold {
-    @apply bg-secondary text-secondary-foreground px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-[0_0_40px_hsl(45_100%_51%/0.3)] hover:scale-105;
+    @apply bg-secondary text-secondary-foreground px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-sm md:text-lg transition-all duration-300 hover:shadow-[0_0_40px_hsl(45_100%_51%/0.3)] hover:scale-105 active:scale-95 min-h-[44px] md:min-h-[48px] flex items-center justify-center;
   }
   
   .text-gradient {
@@ -101,7 +101,7 @@
   }
   
   .whatsapp-float {
-    @apply fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300;
+    @apply fixed bottom-4 md:bottom-6 right-4 md:right-6 z-50 bg-[#25D366] text-white p-3 md:p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center w-12 md:w-14 h-12 md:h-14 active:scale-95;
   }
 }
 

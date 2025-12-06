@@ -46,34 +46,34 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-20 relative">
+    <section className="py-12 md:py-20 relative">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <span className="inline-block glass-card px-4 py-2 text-sm text-muted-foreground mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <span className="inline-block glass-card px-3 py-1 md:px-4 md:py-2 text-xs md:text-sm text-muted-foreground mb-3 md:mb-4">
             questions fréquentes
           </span>
-          <h2 className="section-title mb-4">
+          <h2 className="section-title mb-3 md:mb-4">
             <span className="text-foreground">Tu as des </span>
             <span className="text-primary">questions</span>
             <span className="text-foreground"> ?</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xs sm:text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
             voici les réponses aux questions les plus courantes. si tu ne trouves pas ta réponse, contacte-moi directement.
           </p>
         </div>
         
         <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-2 md:space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="glass-card border border-border/50 rounded-xl px-6 data-[state=open]:border-primary/30"
+                className="glass-card border border-border/50 rounded-xl px-3 md:px-6 py-2 md:py-4 data-[state=open]:border-primary/30"
               >
-                <AccordionTrigger className="text-left text-foreground hover:text-primary hover:no-underline py-4">
+                <AccordionTrigger className="text-left text-xs md:text-sm lg:text-base text-foreground hover:text-primary hover:no-underline py-2 md:py-4">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-4">
+                <AccordionContent className="text-xs md:text-sm text-muted-foreground pb-2 md:pb-4">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -81,15 +81,15 @@ const FAQSection = () => {
           </Accordion>
           
           {/* CTA */}
-          <div className="text-center mt-12">
-            <p className="text-muted-foreground mb-4">Tu as encore des questions ?</p>
+          <div className="text-center mt-8 md:mt-12">
+            <p className="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4">Tu as encore des questions ?</p>
             <a
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary inline-flex items-center gap-2"
+              className="btn-primary inline-flex items-center gap-2 text-sm md:text-base"
             >
-              <MessageCircle className="w-5 h-5" />
+              <MessageCircle className="w-4 md:w-5 h-4 md:h-5" />
               pose-moi ta question
             </a>
           </div>
