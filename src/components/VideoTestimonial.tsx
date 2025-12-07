@@ -2,8 +2,8 @@ import { Play } from "lucide-react";
 
 const VideoTestimonial = () => {
   // Change ces valeurs pour intégrer ta vidéo
-  const videoSrc = "/fleurdy-testimonial.mp4"; // Place ta vidéo dans le dossier public/
-  const logoSrc = "/fleurdy-logo.png"; // Place ton logo dans le dossier public/
+  const videoSrc = "/fleurdy-testimonial.mp4.mp4"; // Place ta vidéo dans le dossier public/
+  const logoSrc = "/fleurdy-logo.png.png"; // Place ton logo dans le dossier public/
 
   return (
     <section className="py-12 md:py-20 relative">
