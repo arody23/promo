@@ -1,9 +1,20 @@
 import { Play } from "lucide-react";
+import { useState, useRef } from "react";
 
 const VideoTestimonial = () => {
   // Change ces valeurs pour intégrer ta vidéo
   const videoSrc = "/fleurdy-testimonial.mp4"; // Place ta vidéo dans le dossier public/
   const logoSrc = "/fleurdy-logo.png"; // Place ton logo dans le dossier public/
+  
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  
+  const handlePlayClick = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
 
   return (
     <section className="py-12 md:py-20 relative">
@@ -21,25 +32,30 @@ const VideoTestimonial = () => {
         
         <div className="max-w-sm mx-auto">
           {/* Video player - portrait format */}
-          <div className="relative aspect-[9/16] glass-card overflow-hidden group cursor-pointer rounded-2xl">
+          <div className="relative aspect-[9/16] glass-card overflow-hidden group cursor-pointer rounded-2xl" onClick={handlePlayClick}>
             {/* Video element */}
             <video
+              ref={videoRef}
               src={videoSrc}
               className="w-full h-full object-cover"
               poster="/fleurdy-poster.jpg"
               controls
               controlsList="nodownload"
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
             />
             
             {/* Placeholder background - shows if video doesn't load */}
             <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-secondary/20 pointer-events-none" />
             
             {/* Play button overlay - hidden when video plays */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="w-16 md:w-20 h-16 md:h-20 rounded-full bg-primary/90 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[var(--shadow-glow)]">
-                <Play className="w-6 md:w-8 h-6 md:h-8 text-white ml-1" fill="white" />
+            {!isPlaying && (
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="w-16 md:w-20 h-16 md:h-20 rounded-full bg-primary/90 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[var(--shadow-glow)]">
+                  <Play className="w-6 md:w-8 h-6 md:h-8 text-white ml-1" fill="white" />
+                </div>
               </div>
-            </div>
+            )}
             
             {/* Video info overlay */}
             <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 bg-gradient-to-t from-background/90 to-transparent">

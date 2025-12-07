@@ -3,6 +3,17 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .logo {
