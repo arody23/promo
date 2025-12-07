@@ -21,8 +21,8 @@ const VideoTestimonial = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="section-title mb-3 md:mb-4">
-            <span className="text-foreground">un </span>
-            <span className="text-primary">Résultat</span>
+            <span className="text-foreground">Un </span>
+            <span className="text-primary">résultat</span>
             <span className="text-foreground"> qui parle</span>
           </h2>
           <p className="text-xs sm:text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">

@@ -84,15 +84,19 @@ const ExperienceSection = () => {
               <span className="text-primary">aroman emetshu</span>
             </h2>
             
-            <div className="space-y-3 md:space-y-4 text-xs sm:text-sm md:text-base text-muted-foreground">
+            <div className="space-y-3 md:space-y-4 text-xs sm:text-sm md:text-base text-muted-foreground leading-relaxed">
+              <p className="font-medium text-foreground">
+                Média buyer & consultant expert en publicités multi-plateformes
+              </p>
               <p>
-                Média buyer & consultant expert en publicités multi-plateformes avec plus de 5 ans d'expérience dans l'accompagnement des e-commerces et entreprises.
+                Avec plus de 5 ans d'expérience, j'accompagne les e-commerces et entreprises à multiplier leurs ventes grâce à des campagnes publicitaires structurées et rentables.
               </p>
               <p>
                 J'achète les emplacements publicitaires là où se trouve ton audience : Meta, Google, TikTok, LinkedIn, Snapchat et plus encore.
               </p>
               <p>
-                Mon approche est simple : comprendre ton business, identifier ton audience idéale, et créer des campagnes qui convertissent. Pas de blabla, que des résultats.
+                Mon approche : comprendre ton business, cibler précisément ton audience, et créer des campagnes qui convertissent. 
+                <span className="text-foreground font-semibold"> Pas de blabla, que des résultats.</span>
               </p>
             </div>
             
