@@ -1,13 +1,17 @@
 import { Play } from "lucide-react";
 
 const VideoTestimonial = () => {
+  // Change ces valeurs pour intégrer ta vidéo
+  const videoSrc = "/fleurdy-testimonial.mp4"; // Place ta vidéo dans le dossier public/
+  const logoSrc = "/fleurdy-logo.png"; // Place ton logo dans le dossier public/
+
   return (
     <section className="py-12 md:py-20 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="section-title mb-3 md:mb-4">
             <span className="text-foreground">un </span>
-            <span className="text-primary">résultat</span>
+            <span className="text-primary">Résultat</span>
             <span className="text-foreground"> qui parle</span>
           </h2>
           <p className="text-xs sm:text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
@@ -16,9 +20,16 @@ const VideoTestimonial = () => {
         </div>
         
         <div className="max-w-sm mx-auto">
-          {/* Video placeholder - portrait format */}
+          {/* Video player - portrait format */}
           <div className="relative aspect-[9/16] glass-card overflow-hidden group cursor-pointer">
-            {/* Placeholder background */}
+            {/* Video element */}
+            <video
+              src={videoSrc}
+              className="w-full h-full object-cover"
+              poster="/fleurdy-poster.jpg"
+            />
+            
+            {/* Placeholder background - shows if video doesn't load */}
             <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-secondary/20" />
             
             {/* Play button overlay */}
@@ -32,8 +43,8 @@ const VideoTestimonial = () => {
             <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 bg-gradient-to-t from-background/90 to-transparent">
               <div className="glass-card p-3 md:p-4">
                 <div className="flex items-center gap-2 md:gap-3 mb-2">
-                  <div className="w-8 md:w-10 h-8 md:h-10 rounded-full bg-secondary flex items-center justify-center text-secondary-foreground font-bold text-xs md:text-sm">
-                    FC
+                  <div className="w-8 md:w-10 h-8 md:h-10 rounded-full bg-secondary flex items-center justify-center text-secondary-foreground font-bold text-xs md:text-sm overflow-hidden">
+                    <img src={logoSrc} alt="Logo Fleurdy Cosmétique" className="w-full h-full object-cover" />
                   </div>
                   <div className="min-w-0">
                     <div className="font-semibold text-foreground text-sm md:text-base truncate">Fleurdy Cosmétique</div>
@@ -44,13 +55,6 @@ const VideoTestimonial = () => {
                   <span className="text-xl md:text-2xl font-bold text-secondary">+300%</span>
                   <span className="text-xs md:text-sm text-muted-foreground">de ROI</span>
                 </div>
-              </div>
-            </div>
-            
-            {/* Instructions */}
-            <div className="absolute top-3 md:top-4 left-3 md:left-4 right-3 md:right-4">
-              <div className="glass-card px-2 md:px-3 py-1 md:py-2 text-xs text-center text-muted-foreground">
-                📹 Ajoute ta vidéo témoignage ici
               </div>
             </div>
           </div>

@@ -28,10 +28,9 @@ const HeroSection = () => {
           
           {/* Main heading */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 animate-fade-in leading-tight" style={{ animationDelay: "0.1s" }}>
-            <span className="text-foreground">Campagnes publicitaires </span>
-            <span className="text-primary">à prix réduit</span>
+            <span className="text-foreground">Dernière ligne droite 2025 :</span>
             <br />
-            <span className="text-foreground">décembre seulement</span>
+            <span className="text-secondary">fais décoller tes ventes maintenant</span>
           </h1>
           
           {/* Subtitle */}

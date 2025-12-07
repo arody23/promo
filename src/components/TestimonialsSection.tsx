@@ -65,7 +65,7 @@ const TestimonialsSection = () => {
           </span>
           <h2 className="section-title mb-3 md:mb-4">
             <span className="text-foreground">Des </span>
-            <span className="text-secondary">résultats</span>
+            <span className="text-secondary">Résultats</span>
             <span className="text-foreground"> concrets</span>
           </h2>
           <p className="text-xs sm:text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
