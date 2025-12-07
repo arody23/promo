@@ -21,19 +21,21 @@ const VideoTestimonial = () => {
         
         <div className="max-w-sm mx-auto">
           {/* Video player - portrait format */}
-          <div className="relative aspect-[9/16] glass-card overflow-hidden group cursor-pointer">
+          <div className="relative aspect-[9/16] glass-card overflow-hidden group cursor-pointer rounded-2xl">
             {/* Video element */}
             <video
               src={videoSrc}
               className="w-full h-full object-cover"
               poster="/fleurdy-poster.jpg"
+              controls
+              controlsList="nodownload"
             />
             
             {/* Placeholder background - shows if video doesn't load */}
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-secondary/20" />
+            <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-secondary/20 pointer-events-none" />
             
-            {/* Play button overlay */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            {/* Play button overlay - hidden when video plays */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="w-16 md:w-20 h-16 md:h-20 rounded-full bg-primary/90 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-[var(--shadow-glow)]">
                 <Play className="w-6 md:w-8 h-6 md:h-8 text-white ml-1" fill="white" />
               </div>
