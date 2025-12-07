@@ -35,7 +35,7 @@ const HeroSection = () => {
           
           {/* Subtitle */}
           <p className="text-sm sm:text-base md:text-lg md:text-xl text-muted-foreground mb-3 md:mb-4 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Je gère tes campagnes Meta, Google & TikTok pendant que tu te concentres sur ton business. Résultats garantis en moins de 2 semaines.
+            Je gère tes campagnes Meta, Google & TikTok pendant que tu te concentres sur ton business.
           </p>
           
           {/* Value proposition */}
