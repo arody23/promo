@@ -28,21 +28,20 @@ const HeroSection = () => {
           
           {/* Main heading */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 animate-fade-in leading-tight" style={{ animationDelay: "0.1s" }}>
-            <span className="text-foreground">Lance tes </span>
-            <span className="text-primary">campagnes pub</span>
+            <span className="text-foreground">Campagnes publicitaires </span>
+            <span className="text-primary">à prix réduit</span>
             <br />
-            <span className="text-foreground">comme un </span>
-            <span className="text-secondary">PRO</span>
+            <span className="text-foreground">décembre seulement</span>
           </h1>
           
           {/* Subtitle */}
           <p className="text-sm sm:text-base md:text-lg md:text-xl text-muted-foreground mb-3 md:mb-4 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Tu perds de l'argent en faisant tes pubs toi-même ? Laisse un expert gérer tes campagnes Meta, Google & TikTok pour maximiser ton ROI.
+            Je gère tes campagnes Meta, Google & TikTok pendant que tu te concentres sur ton business. Résultats garantis en moins de 2 semaines.
           </p>
           
           {/* Value proposition */}
           <p className="text-xs sm:text-sm md:text-base text-muted-foreground/80 mb-6 md:mb-8 max-w-xl mx-auto animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            Rejoins les +50 PME qui ont boosté leur chiffre d'affaires grâce à mes campagnes.
+            Jusqu'à <span className="text-secondary font-bold">50% de réduction</span> sur la gestion complète de tes campagnes. Offre valable jusqu'au 30 décembre.
           </p>
           
           {/* CTA */}
